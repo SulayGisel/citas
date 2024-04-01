@@ -1,0 +1,48 @@
+<div class="card">
+ <div class="card-body">
+
+  <form (ngSubmit)="guardar()">
+   <div>
+    <label class="form-label">
+           Nombre:
+    </label>
+    <input type="text" name="mombre"  class="form-control" placeholder="" [(ngModel)]="cliente.nombre">
+   </div>
+   <div>
+    <label class="form-label">
+           Apellido:
+    </label>
+    <input type="text" name="apellido"   class="form-control" placeholder="" [(ngModel)]="cliente.apellido">
+   </div>
+   <div>
+    <label class="form-label">
+           Identificacion:
+    </label>
+    <input type="text" name="identificacion"   class="form-control" placeholder="" [(ngModel)]="cliente.identificacion">
+   </div>
+   <div>
+    <label class="form-label">
+           Telefono:
+    </label>
+    <input type="text" name="telefono"   class="form-control" placeholder="" [(ngModel)]="cliente.telefono">
+   </div>
+   <div>
+    <label class="form-label">
+           Correo electronico:
+    </label>
+    <input type="text" name="email"   class="form-control" placeholder="" [(ngModel)]="cliente.email">
+   </div>
+   <div>
+    <label class="form-label">
+           Contrasena:
+    </label>
+    <input type="text" name="contrasena"   class="form-control" placeholder="" [(ngModel)]="cliente.contrasena">
+   </div>
+   <button class="btn">   Enviar </button>
+ 
+  </form>
+
+
+ </div>
+</div>
+
